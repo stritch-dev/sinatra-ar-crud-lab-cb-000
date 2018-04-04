@@ -1,8 +1,10 @@
    <p>
    <form action='/posts/<%=@post.id%>/delete' method='post'>
+
      Name: <%=@post.name%></br>
      Content: <%=@post.content%></br>
+
+     <input type='hidden' name='_method' value='delete' id='hidden'/>
      <input type='submit' value='delete'>
-     <input type='hidden' name='_method' value='delete'/>
    </form>
    </p>
